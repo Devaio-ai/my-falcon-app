@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import ReactECharts from 'echarts-for-react'
 import { useReportStore } from '../store/reportStore'
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import html2pdf from 'html2pdf.js'
 import html2canvas from 'html2canvas'
 import jazanLogo from '/jazan-logo.png'
@@ -19,7 +19,6 @@ const ReportPage = () => {
     calculateTotalEvents,
     calculateEventRate,
     getAccessTypeData,
-    getEventData
   } = useReportStore()
   const reportRef = useRef<HTMLDivElement>(null)
 
